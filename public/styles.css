@@ -20,7 +20,7 @@
 }
 
 .text-center {
-    text-align: left;
+    text-align: center;
 }
 
 .thumbnail img {
@@ -50,6 +50,36 @@
     background-color: transparent !important;
 } .dropdown a[aria-expanded="true"]:focus {
     border-color: white;
+}
+
+.footer-div {
+    height: 250px;
+    background-color: #68EDCF;
+    padding: 65px 50px;
+    width: 100%;
+    color: #eee;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.footer-div a {
+    display: inline-block;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    margin: 0 4px;
+    height: 36px;
+    width: 36px;
+    font-size: 1.6rem;
+    line-height: 2.3;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+
+.footer-div a:hover {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+    border: none;
 }
 
 .nav {
@@ -107,6 +137,14 @@
     padding: 0;
 }
 
+ul.nav {
+    transition: all 0.3s;
+}
+
+.navbar-close ul.nav {
+    padding: 5px 0;
+}
+
 .navbar-mobile {
     padding: 5px 5px;
 }
@@ -126,11 +164,6 @@
     padding: 0 20px;
     text-align: center;
 }
-
-/* for gaps between info blocks */
-/* .info-block:not(:first-child) {
-     margin-top: 20px; 
-} */
 
 .info-block h1, h2{
     background: none;
@@ -211,14 +244,6 @@ h1, h4, h6 {
     border: 0;
     margin: 20px 20%;
 }
-
-a .hr-2 {
-    height: 6px;
-	background: url(img/hr-img.png) repeat-x 0 0;
-    border: 0;
-    margin: 10px 10%;
-}
-
 
 h1 {
     font-size: 8em;
