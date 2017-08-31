@@ -35,16 +35,16 @@ $('#bs-navbar-collapse').on('hide.bs.collapse', function() {
     didScroll = true;
 });
 
-// Make the 'About' button on the navbar scroll you to the projects div
-$('#nav-about-button').on('click', function(){
-    var dest = $('#about-container').offset().top - 70;
-    window.scroll(0, dest);
-});
-
-// Make the 'Projects' button on the navbar scroll you to the projects div
-$('#nav-projects-button').on('click', function(){
-    var dest = $('#projects-container').offset().top - 70;
-    window.scroll(0, dest);
+$('a[href*="#"').on("click", function(){
+     var target = $(this.hash);
+     if(target.length != 0){
+         var dest = target.offset().top - 65;
+         $('html, body').animate({
+             scrollTop: dest
+         }, 1000);
+     } else {
+         document.location.href = "/" + this.hash;
+     }
 });
 
 $('.navbar-toggle').on('click', function(){

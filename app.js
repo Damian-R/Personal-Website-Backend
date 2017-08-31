@@ -1,5 +1,5 @@
-var express = require("express");
-var app = express();
+var express = require("express"),
+    app = express();
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -9,7 +9,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/project/:projectName", function(req, res){
-    res.render("project");
+    res.render("project", {projectName: req.params.projectName});
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
