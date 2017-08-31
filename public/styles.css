@@ -7,6 +7,13 @@
     padding: 20px 0;
 }
 
+#projects-container {
+    padding: 50px 0;
+} #projects-container h3 {
+    font-size: 40px;
+    color: #1F2833
+}
+
 .align-left {
     text-align: left;
 }
@@ -26,11 +33,13 @@
 .thumbnail img {
     max-width: 100%;
     max-height: 100%;
+} .thumbnail {
+    border: none;
 }
 
 .footer-div {
     height: 250px;
-    background-color: #68EDCF;
+    background-color: #1F2833;
     padding: 65px 50px;
     width: 100%;
     color: #eee;
@@ -125,7 +134,9 @@ a:hover img{
 }
 
 body {
-    background: url(img/bg.png);
+    background: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Montserrat'; 
     /* font-family: 'Segoe UI Black'; */
 }

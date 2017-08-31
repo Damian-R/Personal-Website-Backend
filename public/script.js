@@ -51,18 +51,6 @@ $('.navbar-toggle').on('click', function(){
     navbar.css("opacity", "1");
 });
 
-// $('.dropdown').on('show.bs.dropdown', function(e){
-//     $('.navbar').find('.dropdown-menu').first().stop(true, true).slideDown("fast");
-// });
-
-// $('.dropdown').on('hide.bs.dropdown', function(e){
-//     e.preventDefault();
-//     $('.navbar').find('.dropdown-menu').first().stop(true, true).slideUp("fast", function(){
-//         $("a[data-toggle='dropdown']").attr("aria-expanded", "false");
-//         $('.dropdown').removeClass("open");
-//     });
-// });
-
 // TODO FIX COLLAPSED CONTACT DROPDOWN
 
 $('ul.nav li.dropdown').hover(function() {

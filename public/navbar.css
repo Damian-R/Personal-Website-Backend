@@ -113,7 +113,8 @@
 }
 
 .navbar-close {
-    background-color: #68EECF;
+    background-color: #1F2833;
+    border-bottom: 1px solid #C5C6C7;
     box-shadow: 2px 0px 4px black;
     padding: 0;
 }
