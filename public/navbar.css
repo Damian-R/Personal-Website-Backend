@@ -1,0 +1,135 @@
+/* NAVBAR STYLES */
+
+.navbar-inverse {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    transition: all 0.4s;
+}
+
+.dropdown-menu {
+    width: 200px;
+    position: absolute;
+    padding: 0;
+    background: #fff;
+    left: 50%;
+    right: auto;
+}
+
+.dropdown-container li {
+    height: 100%;
+    width: 100%;
+}
+
+.dropdown-item a {
+    position: relative;
+    display: block;
+    height: 40px;
+    border-bottom: 1px solid #EEF1F6;
+    text-decoration: none;
+    font-size: 14px;
+    color: #7cc1b9;
+    opacity: 0.8;
+    padding: 0 20px;
+}
+
+.dropdown-item a:hover {
+    text-decoration: none;
+    background-color: #F7F8FB;
+    opacity: 1;
+}
+
+.dropdown-item i {
+    display: inline-block;
+    color: rgba(124,193,185,1);
+    text-decoration: none;
+    margin-top: 4px;
+    height: 30px;
+    width: 30px;
+    line-height: 2.3;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+
+.dropdown-item div {
+    display: none;
+}
+
+.dropdown a[aria-expanded="true"] {
+    background-color: transparent !important;
+} .dropdown a[aria-expanded="true"]:focus {
+    border-color: white;
+}
+
+.nav {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 10px 0;
+}
+
+.navbar-right li .navbar-link {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding: 8px 15px;
+    margin: 4px 4px 4px 4px;
+    min-width: 100px;
+    transition: all 0.28s;
+    font-size: 13.333px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    text-align: center;
+    color: #fefefe !important;
+}
+
+.navbar-right li.navitem-bold .navbar-link {
+    border-radius: 0;
+    border: 3px solid white;
+    min-width: 120px;
+} .navbar-right li.navitem-bold .navbar-link:hover {
+    opacity: 1 !important;
+    border: 3px solid white !important; 
+}
+
+.navitem-bold .navbar-link {
+    opacity: 0.75;
+    /* border: 3px solid #eeeeee; */
+}
+
+.navbar-right:hover .navbar-link {
+    opacity: 0.75;
+}
+
+.navbar-right li .navbar-link:hover {
+    border-bottom: 3px solid white;
+    opacity: 1 !important;
+}
+
+.navbar-inverse .navbar-collape.in {
+    opacity: 1;
+}
+
+.navbar-close {
+    background-color: #68EECF;
+    box-shadow: 2px 0px 4px black;
+    padding: 0;
+}
+
+ul.nav {
+    transition: all 0.3s;
+}
+
+.navbar-close ul.nav {
+    padding: 5px 0;
+}
+
+.navbar-mobile {
+    padding: 5px 5px;
+}
+
+.navitem-bold {
+    font-weight: bold;
+}

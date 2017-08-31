@@ -1,3 +1,5 @@
+/* global $ */
+
 var navbar = $('nav');
 var didScroll = false;
 var didResize = false;
@@ -49,16 +51,30 @@ $('.navbar-toggle').on('click', function(){
     navbar.css("opacity", "1");
 });
 
-$('.dropdown').on('show.bs.dropdown', function(e){
-    $('.navbar').find('.dropdown-menu').first().stop(true, true).slideDown("fast");
+// $('.dropdown').on('show.bs.dropdown', function(e){
+//     $('.navbar').find('.dropdown-menu').first().stop(true, true).slideDown("fast");
+// });
+
+// $('.dropdown').on('hide.bs.dropdown', function(e){
+//     e.preventDefault();
+//     $('.navbar').find('.dropdown-menu').first().stop(true, true).slideUp("fast", function(){
+//         $("a[data-toggle='dropdown']").attr("aria-expanded", "false");
+//         $('.dropdown').removeClass("open");
+//     });
+// });
+
+// TODO FIX COLLAPSED CONTACT DROPDOWN
+
+$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
 });
 
-$('.dropdown').on('hide.bs.dropdown', function(e){
-    e.preventDefault();
-    $('.navbar').find('.dropdown-menu').first().stop(true, true).slideUp("fast", function(){
-        $("a[data-toggle='dropdown']").attr("aria-expanded", "false");
-        $('.dropdown').removeClass("open");
-    });
+$('#contact-email').on('click', function() {
+    console.log("email clicked");
+    console.log($(this).siblings("div"));
+    $(this).siblings('div').css("display", "block");
 });
 
 setInterval(function(){
