@@ -7,6 +7,26 @@
     transition: all 0.4s;
 }
 
+/*.dropdown-item div {*/
+/*    display: none;*/
+/*    transition: all 0.3s;*/
+/*}*/
+
+/*.display-block {*/
+/*    display: block !important;*/
+/*}*/
+
+.dropdown-item div {
+    display: block;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.3s;
+}
+
+.dropdown-item .display-block {
+    height: 30px;
+}
+
 .dropdown-menu {
     width: 200px;
     position: absolute;
@@ -51,10 +71,6 @@
     border-radius: 50px;
     transition: all .3s ease-in-out;
     text-align: center;
-}
-
-.dropdown-item div {
-    display: none;
 }
 
 .dropdown a[aria-expanded="true"] {

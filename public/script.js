@@ -59,10 +59,8 @@ $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
 });
 
-$('#contact-email').on('click', function() {
-    console.log("email clicked");
-    console.log($(this).siblings("div"));
-    $(this).siblings('div').css("display", "block");
+$('.contact-btn').on('click', function() {
+    $(this).siblings('div').toggleClass("display-block");
 });
 
 setInterval(function(){
