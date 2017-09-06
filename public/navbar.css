@@ -20,6 +20,32 @@
 
 .dropdown-item div span {
     vertical-align: sub;
+    cursor: pointer;
+}
+
+.contact-hidden {
+    overflow: hidden;
+}
+
+.contact-hidden span {
+    transition: transform 0.25s;
+    -webkit-transition: -webkit-transform 0.25s;
+    display: block;
+    position: relative;
+    transform: translateY(80px);
+    -webkit-transform: translateY(40px);
+    z-index: 1;
+}
+
+.contact-hidden.status-default .msg-default,
+.contact-hidden.status-copied .msg-copied {
+    transform: translateY(20px);
+    -webkit-transform: translateY(0);
+    z-index: 2;
+}
+
+.contact-hidden .status-copied {
+    margin-top: -30px;
 }
 
 .dropdown-item .display-block {
@@ -48,7 +74,7 @@
     border-bottom: 1px solid #EEF1F6;
     text-decoration: none;
     font-size: 14px;
-    color: #7cc1b9;
+    color: #1E2630;
     opacity: 0.8;
     padding: 0 20px;
 }
@@ -61,7 +87,7 @@
 
 .dropdown-item i {
     display: inline-block;
-    color: rgba(124,193,185,1);
+    color: #1E2630;
     text-decoration: none;
     margin-top: 4px;
     height: 30px;

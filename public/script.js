@@ -31,6 +31,26 @@ jWindow.resize(function(){
     didResize = true;
 });
 
+$('.dropdown-item span').on("click", function(){
+    var $elem = $(this);
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($elem.text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    
+    console.log("adding status-copied");
+    $elem.parent("div").removeClass('status-default').addClass('status-copied');
+    
+    setTimeout(function(){
+        console.log("adding status-default");
+        $elem.parent("div").removeClass('status-copied').addClass('status-default');
+    }, 1000);
+    
+});
+
+
+
 $('#bs-navbar-collapse').on('hide.bs.collapse', function() {
     didScroll = true;
 });
