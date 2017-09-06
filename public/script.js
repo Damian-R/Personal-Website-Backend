@@ -40,11 +40,10 @@ $('.dropdown-item span').on("click", function(){
     $temp.remove();
     
     console.log("adding status-copied");
-    $elem.parent("div").removeClass('status-default').addClass('status-copied');
+    $elem.parent("div").parent(".contact-hidden").removeClass('status-default').addClass('status-copied');
     
     setTimeout(function(){
-        console.log("adding status-default");
-        $elem.parent("div").removeClass('status-copied').addClass('status-default');
+        $elem.parent("div").parent(".contact-hidden").removeClass('status-copied').addClass('status-default');
     }, 1000);
     
 });

@@ -7,7 +7,7 @@
     transition: all 0.4s;
 }
 
-.dropdown-item div {
+.dropdown-item .contact-hidden {
     text-align: center;
     background-color: #f5f5f5;
     border: 1px solid transparent;
@@ -18,7 +18,11 @@
     transition: height 0.3s;
 }
 
-.dropdown-item div span {
+.padding-div {
+    padding: 5px;
+}
+
+.dropdown-item .contact-hidden span {
     vertical-align: sub;
     cursor: pointer;
 }
@@ -27,25 +31,30 @@
     overflow: hidden;
 }
 
-.contact-hidden span {
+.contact-hidden .msg-default,
+.contact-hidden .msg-copied {
     transition: transform 0.25s;
     -webkit-transition: -webkit-transform 0.25s;
     display: block;
     position: relative;
-    transform: translateY(80px);
-    -webkit-transform: translateY(40px);
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
     z-index: 1;
+}
+
+.msg-copied {
+    margin-top: -20px;
 }
 
 .contact-hidden.status-default .msg-default,
 .contact-hidden.status-copied .msg-copied {
-    transform: translateY(20px);
+    transform: translateY(0);
     -webkit-transform: translateY(0);
     z-index: 2;
 }
 
 .contact-hidden .status-copied {
-    margin-top: -30px;
+    padding-top: -40px;
 }
 
 .dropdown-item .display-block {
