@@ -25,6 +25,9 @@
     top: 50%;
 }
 
+.project-info {
+    margin-top: 50px;
+}
 #carousel-example-generic {
     max-height: 580px;
     max-width: 350px;
