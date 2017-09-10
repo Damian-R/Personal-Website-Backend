@@ -38,8 +38,7 @@ $('.dropdown-item span').on("click", function(){
     $temp.val($elem.text()).select();
     document.execCommand("copy");
     $temp.remove();
-    
-    console.log("adding status-copied");
+
     $elem.parent("div").parent(".contact-hidden").removeClass('status-default').addClass('status-copied');
     
     setTimeout(function(){
