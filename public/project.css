@@ -20,7 +20,7 @@
   background-color: #444;
 }
 
-.carousel-control span.fa {
+.carousel-control .fa {
     position: absolute;
     top: 50%;
 }
@@ -28,6 +28,28 @@
 .project-info {
     margin-top: 50px;
 }
+
+.project-info .row div {
+    margin-top: 50px;
+}
+
+.project-info p {
+    color: #eee;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.skills-info {
+    background: rgba(255,255,255,0.5);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.skills-list li {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 #carousel-example-generic {
     max-height: 580px;
     max-width: 350px;
@@ -40,7 +62,7 @@ h1 {
     font-size: 40px;
 }
 
-h4 {
+h3, h4 {
     font-size: 26px;
 }
 

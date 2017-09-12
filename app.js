@@ -9,7 +9,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/project/:projectName", function(req, res){
-    res.render("project", {projectName: req.params.projectName});
+    res.render("project", {projectName: req.params.projectName, albumSize: 0});
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
