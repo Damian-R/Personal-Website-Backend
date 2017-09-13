@@ -50,16 +50,16 @@
         <div class="col-lg-6">
           <p><%= project.desc %></p>
         </div>
-        <div class="col-lg-6 skills-info">
+        <div class="col-lg-6 col-lg-offset-0 col-md-offset-2 col-md-8 col-xs-6 col-xs-offset-3 skills-info">
           <h3 class="text-center">Skills/Technologies Used</h3>
           <hr>
           <ul class="skills-list">
-            <% for(var i = 0; i < project.skills.length; i++){ %>
+            <% for(var i = 0; i < project.skills.length-1; i++){ %>
               <li><%= project.skills[i] %></li>
             <% } %>
           </ul>
           <hr>
-          <h5 class="text-center">Made in: Android Studio</h5>
+          <h5 class="text-center">Made in: <%= project.skills[project.skills.length-1] %></h5>
         </div>
       </div>
     </div>

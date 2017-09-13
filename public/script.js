@@ -53,7 +53,7 @@ $('#bs-navbar-collapse').on('hide.bs.collapse', function() {
     didScroll = true;
 });
 
-$('a[href*="#"').on("click", function(){
+$('a[href*="#"].navbar-link').on("click", function(){
      var target = $(this.hash);
      if(target.length != 0){
          var dest = target.offset().top - 65;
