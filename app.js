@@ -27,7 +27,7 @@ app.get("/project/:projectName", function(req, res){
         case "homebase":
             desc = "This is the description for Home Base";
             albumSize = 5;
-            skills = ["HTML", "CSS", "JavaScript", "NodeJS", "ExpressJS, Mongoose, Passport", "Bootstrap", "VS Code"];
+            skills = ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "ExpressJS, Passport", "Bootstrap", "VS Code"];
             break;
     }
     var project = {

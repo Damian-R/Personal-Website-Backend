@@ -97,13 +97,14 @@ setInterval(function(){
                 navbar.removeClass("navbar-mobile");
             }
         }
+        
         didResize = false;
     }
 
     if(!smallScreen)
         if(didScroll){
-            var offset = $('h1').offset().top;
-            if($(window).scrollTop() >= offset - 70){
+            // var offset = $('h1').offset().top;
+            if($(window).scrollTop() >= 30){
                 navbar.addClass("navbar-close");
             } else {
                 navbar.removeClass("navbar-close");
