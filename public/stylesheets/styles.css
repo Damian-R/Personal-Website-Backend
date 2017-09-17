@@ -146,7 +146,7 @@ a:hover img{
 }
 
 body {
-    background: url(img/bg.jpg);
+    background: url(/img/bg.jpg);
     background-repeat: no-repeat;
     font-family: 'Montserrat'; 
     /* font-family: 'Segoe UI Black'; */
