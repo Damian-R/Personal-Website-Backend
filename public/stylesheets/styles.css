@@ -134,10 +134,6 @@
     color: #337ab7;
 }
 
-.project-sub {
-    margin: 20px 290px;
-}
-
 a:hover img{
      opacity: 0.9; 
     -webkit-transform: scale(1.07);
