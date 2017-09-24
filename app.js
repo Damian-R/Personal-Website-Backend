@@ -20,7 +20,7 @@ app.get("/project/:projectName", function(req, res){
             skills = ["Java", "Volley", "OpenWeatherMap API", "Google Maps API", "JSON", "Android Studio"];
             break;
         case "placefinder":
-            desc = "PlaceFinder is an extremely easy and quick way of finding establishments of a certain type near you. It uses the Google Maps and Google Places API to display the location and information of stores in an easy to use and effective manor. It parses and displays data from the Places API in a RecyclerView, which makes the app easy to use and lightweight.";
+            desc = "PlaceFinder is a very quick and easy way of finding establishments of a certain type near you. It uses the Google Maps and Google Places API to display the location and information of stores in an easy to use and effective manor. It parses and displays data from the Places API in a RecyclerView, which makes the app easy to use and lightweight.";
             albumSize = 5;
             skills = ["Java", "Volley", "JSON", "Google API Client", "Google Maps API", "Google Places API", "Android Studio"];
             break;
