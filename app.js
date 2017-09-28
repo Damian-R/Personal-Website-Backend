@@ -25,9 +25,9 @@ app.get("/project/:projectName", function(req, res){
             skills = ["Java", "Volley", "JSON", "Google API Client", "Google Maps API", "Google Places API", "Android Studio"];
             break;
         case "homebase":
-            desc = "This is the description for Home Base";
+            desc = "When I learn a new web development skill, I want a real place to test it and apply my knowledge. I use Home Base as that testing ground for new skills. Using this app, I have reinforced my knowledge with common technolgies and accelerated my learning of new ones through \"real\" applications. On a ground level, Home Base is a dummy campsite review website. Users can leave ratings, descriptions, and comments. It uses Passport to check authentication and MongoDB to store Campsites, Users, and Comments in a database.";
             albumSize = 5;
-            skills = ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "ExpressJS, Passport", "Bootstrap", "VS Code"];
+            skills = ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "RESTful Routing" ,"ExpressJS", "Passport", "Bootstrap", "VS Code"];
             break;
     }
     var project = {
