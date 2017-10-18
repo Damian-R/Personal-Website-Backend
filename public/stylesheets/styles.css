@@ -145,7 +145,6 @@ body {
     background: url(/img/bg.jpg);
     background-repeat: no-repeat;
     font-family: 'Montserrat'; 
-    /* font-family: 'Segoe UI Black'; */
 }
 
 h1, h4, h6 {
@@ -178,4 +177,8 @@ h4 {
 
 h6 {
     font-size: 2em;
+}
+
+body {
+    overflow-x: hidden;
 }
