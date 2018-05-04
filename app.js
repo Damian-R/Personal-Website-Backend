@@ -30,8 +30,8 @@ app.get("/project/:projectName", function(req, res){
             skills = ["HTML", "CSS", "JavaScript", "NodeJS", "MongoDB", "RESTful Routing" ,"ExpressJS", "Passport", "Bootstrap"];
             break;
         case "doctordms":
-            desc = "In progress";
-            albumSize = 1;
+            desc = "Doctor DMs is a SMS service created at Deltahacks IV. It allows anybody in the world to get detailed medical information by sending a text message. It can diagnose a list of symptoms, give treatment information for illnesses and provide addition information such as what professionals to see to get the most help, or other accompanying symptoms. It won the \"Best use of StdLib\" award and was a finalist for \"Best Hack Overall\".";
+            albumSize = 4;
             skills = ["NodeJS", "JavaScript"]
             break;
         case "onionometer":
