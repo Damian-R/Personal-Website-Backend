@@ -6,6 +6,7 @@
 <div class="container main">
   <div class="row">
     <div class="col-md-4 col-md-offset-0 col-xs-6 col-xs-offset-3 carousel-cont">
+      <% if(project.albumSize > 0) { %>
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -43,6 +44,9 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <% } else { %>
+        <img src='/img/no-img-available.png' style='margin-top: 100px'>
+      <% } %>
     </div>
     <div class="project-info col-md-8 col-xs-12">
       <h1><%= project.title %></h1>
@@ -54,10 +58,13 @@
           <h3 class="text-center">Skills/Technologies Used</h3>
           <hr>
           <ul class="skills-list">
-            <% for(var i = 0; i < project.skills.length-1; i++){ %>
+            <% for(var i = 0; i < project.skills.length; i++){ %>
               <li><%= project.skills[i] %></li>
             <% } %>
           </ul>
+          <div class="github_link">
+            <a href=<%= project.github_link %> target='_blank'>View this project on GitHub</a>
+          </div>
         </div>
       </div>
     </div>
