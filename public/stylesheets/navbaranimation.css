@@ -1,7 +1,7 @@
 nav {
     opacity: 0;
     animation: fadein 1s forwards, slidein 1s forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1s;
 }
 
 @keyframes fadeinandmove {

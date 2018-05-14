@@ -2,22 +2,9 @@
     margin: 170px auto 170px auto;
 }
 
-#header-name {
+#header-edu {
     opacity: 0;
-    animation: fadein 1.5s forwards;
-    animation-delay: 0.5s;
-}
-
-#header-compeng {
-    opacity: 0;
-    animation: fadein 1s forwards;
-    animation-delay: 1s;
-}
-
-#header-uw {
-    opacity: 0;
-    animation: fadein 1s forwards;
-    animation-delay: 1.5s
+    animation: fadein 1.5s forwards, slide-bottom 1.5s forwards;
 }
 
 @keyframes fadein {
@@ -25,10 +12,15 @@
     to   { opacity: 1; }
 }
 
+@keyframes slide-bottom {
+    from { margin-top: 3px; }
+    to   { margin-top: 0; }
+}
+
 #content-container {
     opacity: 0;
     animation: fadein 1s forwards;
-    animation-delay: 2.5s;
+    animation-delay: 1s;
     background: rgba(10, 50, 80, 0.7);
     border-top: 6px solid grey;
     border-bottom: 6px solid grey;
