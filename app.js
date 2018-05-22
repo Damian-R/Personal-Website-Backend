@@ -33,7 +33,7 @@ app.get("/project/:projectName", function(req, res){
             github_link = 'https://github.com/Damian-R/HomeBase';
             break;
         case "doctordms":
-            desc = "Doctor DMs is a SMS service created at Deltahacks IV. It allows anybody in the world to get detailed medical information by sending a text message. It can diagnose a list of symptoms, give treatment information for illnesses and provide addition information such as what professionals to see to get the most help, or other accompanying symptoms. It won the \"Best use of StdLib\" award and was a finalist for \"Best Hack Overall\".";
+            desc = "Doctor DMs is a SMS service created at Deltahacks IV. It allows anybody in the world to get detailed medical information by sending a text message. It can diagnose a list of symptoms, give treatment information for illnesses and provide addition information such as what professionals to see to get the most help, or other accompanying symptoms. It won the \"Best use of StdLib\" award and was a finalist for \"Best Hack Overall\". See it in action <a href='https://imgur.com/a/ws9EcjP'>here</a>";
             albumSize = 4;
             skills = ["NodeJS", "JavaScript"];
             github_link = 'https://github.com/Damian-R/phone-doctor';
